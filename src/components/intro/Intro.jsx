@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Frontend Web Developer ", "Designer", "HTML CSS JS", "React Bootstrap", "Redux"],
+      strings: ["Frontend Developer",  "JavaScript", "React"],
     });
   }, []);
 

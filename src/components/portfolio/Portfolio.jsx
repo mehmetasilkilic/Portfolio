@@ -2,23 +2,46 @@ import "./portfolio.scss"
 
 export default function Portfolio() {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
       <div className="container">
-        <div className="new">
-          <a target="_blank" href="https://github.com/mehmetasilkilic/MPerformanceSite"><img src="assets/msite.jpg" alt="" className="image" /></a>
-          <h2 className="title">BMW M Performance Site</h2>
+        <div className="wrapper">
+          <div className="imgWrapper">
+            <img src="assets/ecom.jpg" alt="" />
+          </div>
+          <div className="info">
+            <h2 className="title">E-commerce</h2>
+            <a target="blank" href="https://makecom.herokuapp.com/">Web Site</a>
+            <a target="blank" href="https://makecomadmin.herokuapp.com/">Admin Panel</a>
+            <a target="blank" href="https://github.com/mehmetasilkilic/ecomclient">Client Github</a>
+            <a target="blank" href="https://github.com/mehmetasilkilic/ecomadminpanel">Admin Panel Github</a>
+          </div>
         </div>
-        <div className="new">
-          <a target="_blank" href="https://github.com/mehmetasilkilic/Portfolio.git"><img src="assets/portfolio.jpg" alt="" className="image" /></a>
-          <h2 className="title">Portfolio Site</h2>
+        <div className="wrapper">
+          <div className="imgWrapper">
+            <img src="assets/portfolio.jpg" alt="" />
+          </div>
+          <div className="info">
+            <h2 className="title">Portfolio</h2>
+            <a target="blank" href="https://github.com/mehmetasilkilic/Portfolio.git">Github</a>
+          </div>
         </div>
-        <div className="new">
-        <a target="_blank" href="https://github.com/mehmetasilkilic/JDMBlog"><img src="assets/jdmblog.jpg" alt="" className="image" /></a>
-          <h2 className="title">JDM Blog</h2>
+        <div className="wrapper">
+          <div className="imgWrapper">
+            <img src="assets/jdmblog.jpg" alt="" />
+          </div>
+          <div className="info">
+            <h2 className="title">JDM Blog</h2>
+            <a target="blank" href="https://github.com/mehmetasilkilic/JDMBlog">Github</a>
+          </div>
         </div>
-        <div className="new">
-        <a target="_blank" href="https://github.com/mehmetasilkilic/FobboTanitim"><img src="assets/fobbo.jpg" alt="" className="image" /></a>
-          <h2 className="title">Fobbo Promotion Site</h2>
+        <div className="wrapper">
+          <div className="imgWrapper">
+            <img src="assets/msite.jpg" alt="" />
+          </div>
+          <div className="info">
+            <h2 className="title">BMW M Performance Site</h2>
+            <a target="blank" href="https://github.com/mehmetasilkilic/MPerformanceSite">Github</a>
+          </div>
         </div>
       </div>
     </div>
