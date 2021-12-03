@@ -1,50 +1,20 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: white;
+  background-color: $mainColor;
   display: flex;
 
   @include mobile{
     flex-direction: column;
     align-items: center;
   }
-
-  .left {
-    flex: 0.5;
-    overflow: hidden;
-
-    .imgContainer {
-      width: 100%;
-      height: 100%;
-      background-color: #ea6109;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      float: right;
-
-      @include mobile{
-        align-items: flex-start;
-      }
-
-      img {
-        height: 90%;
-
-        @include mobile{
-          height: 50%;
-        }
-      }
-    }
-  }
-  .right {
-    flex: 0.5;
-    position: relative;
-
+  
     .wrapper {
       width: 100%;
       height: 100%;
-      padding-left: 50px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
 
       @include mobile{
@@ -54,6 +24,7 @@
 
       h1 {
         font-size: 60px;
+        color: white;
         margin: 10px 0;
 
         @include mobile{
@@ -88,11 +59,31 @@
             }
         }
       }
+      button{
+        margin-top: 20px;
+        width: 120px;
+        height: 40px;
+        border: none;
+        color: crimson;
+        font-weight: bold;
+        background-color: white;
+        box-shadow: inset 0 0 0 0 crimson;
+        font-size: 20px;
+        transition: ease-out 0.3s;
+        outline: none;
+
+        &:hover {
+          cursor: pointer;
+          color: white;
+          box-shadow: inset 150px 0 0 0 crimson;
+        }
+      }
+
     }
     a {
       position: absolute;
       bottom: 10px;
-      left: 40%;
+      
 
       img {
         width: 30px;
@@ -106,4 +97,3 @@
       }
     }
   }
-}

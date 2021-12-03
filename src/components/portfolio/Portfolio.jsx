@@ -1,6 +1,6 @@
 import "./portfolio.scss"
 
-export default function Portfolio() {
+const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       <div className="container">
@@ -47,3 +47,5 @@ export default function Portfolio() {
     </div>
   )
 }
+
+export default Portfolio
