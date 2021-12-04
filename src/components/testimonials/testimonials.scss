@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .testimonials {
-  background-color: white;
+  background-color: $mainColor;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +13,7 @@
 
   h1 {
     font-size: 50px;
+    color: white;
 
     @include mobile{
       font-size: 20px;
@@ -91,7 +92,8 @@
       .center {
         padding: 10px;
         border-radius: 10px;
-        background-color: rgb(250, 244, 245);
+        background-color: $mainColor;
+        color: rgb(121, 115, 115);
 
         @include mobile{
           font-size: 12px;
@@ -106,6 +108,7 @@
 
         h3 {
           margin-bottom: 5px;
+          color: white;
 
           @include mobile{
             font-size: 14px;
