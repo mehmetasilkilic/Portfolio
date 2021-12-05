@@ -43,7 +43,7 @@ const Intro = () => {
             <p>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Portfolio section.</p>
             <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
             <h3>Competencies</h3>
-            <p>HTML5, CSS3/SASS, JavaScript, TypeScript, ReactJS, Redux, NextJS, WebPack, Babel, Photoshop</p>
+            <p>HTML5, CSS3/SASS, JavaScript, TypeScript, ReactJS, Redux, Photoshop</p>
             <h4>Abou</h4>
           </div>
           <div className="right">

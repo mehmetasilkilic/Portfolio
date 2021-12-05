@@ -42,7 +42,7 @@
             background-color: white;
 
             @include mobile{
-              padding: 10px;
+              padding: 5px;
             }
 
 
@@ -51,7 +51,8 @@
                 font-size: 30px;
 
                 @include mobile{
-                  margin: 80px 10px 10px 10px;
+                  font-size: 24px;
+                  margin: 70px 10px 5px 10px;
                 }
               }
 
@@ -62,7 +63,8 @@
 
                 @include mobile{
                   padding: 0 10px;
-                  margin-bottom: 10px;
+                  margin-bottom: 5px;
+                  font-size: 14px;
                 }
             }
             h3 {
@@ -70,7 +72,8 @@
                 font-size: 24px;
 
                 @include mobile{
-                  margin: 30px 10px 10px 10px;
+                  margin: 5px 10px;
+                  font-size: 20px;
                 }
             }
 
@@ -96,7 +99,7 @@
             justify-content: center;
 
             @include mobile{
-              padding: 10px;
+              padding: 5px;
             }
 
             h2 {
@@ -106,7 +109,7 @@
 
                 @include mobile{
                   margin: 10px;
-                  margin-bottom: 40px;
+                  font-size: 24px;
                 }
               }
           
@@ -125,7 +128,8 @@
                   outline: none;
           
                   @include mobile {
-                    height: 20px;
+                    min-height: 20px;
+                    margin-bottom: 15px;
                   }
                 }
           
@@ -138,6 +142,7 @@
           
                   @include mobile {
                     height: 100px;
+                    margin-bottom: 15px;
                   }
                 }
           
@@ -152,6 +157,10 @@
                   z-index: 102;
                   cursor: not-allowed;
                   margin-bottom: 20px;
+
+                  @include mobile {
+                    margin-bottom: 5px;
+                  }
                 }
           
                 span {
@@ -171,7 +180,7 @@
 
                   @include mobile{
                     color: black;
-                    top: 90px;
+                    top: 80px;
                     right: 30px;
                   }
               }
