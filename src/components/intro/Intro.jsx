@@ -58,7 +58,6 @@ const Intro = () => {
             <button className="close" onClick={() => aboutRef.current.close()}>X</button>
             <h3>Contact</h3>
           </div>
-
         </About>
         <a href="#portfolio">
           <img src="assets/downWhite.png" alt="" />
