@@ -52,7 +52,7 @@
 
                 @include mobile{
                   font-size: 24px;
-                  margin: 70px 10px 5px 10px;
+                  margin: 60px 10px 5px 10px;
                 }
               }
 
@@ -108,7 +108,7 @@
                 font-size: 30px;
 
                 @include mobile{
-                  margin: 10px;
+                  margin:0 10px 10px 10px;
                   font-size: 24px;
                 }
               }
@@ -180,7 +180,7 @@
 
                   @include mobile{
                     color: black;
-                    top: 80px;
+                    top: 65px;
                     right: 30px;
                   }
               }
