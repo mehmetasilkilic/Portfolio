@@ -2,6 +2,7 @@
 
 .intro {
   background-color: $mainColor;
+  height: 100vh;
   display: flex;
 
   @include mobile{

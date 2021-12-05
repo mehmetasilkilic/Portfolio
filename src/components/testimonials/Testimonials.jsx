@@ -9,7 +9,7 @@ const Testimonials = () => {
       title: "Developer",
       img:
         "https://www.crystalcare.org.uk/wp-content/uploads/2014/05/pp-blank-m.jpg",
-      icon: "assets/twitterWhite.png",
+      icon: "assets/twitter.png",
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
     },
@@ -20,7 +20,7 @@ const Testimonials = () => {
       title: "Developer",
       img:
         "https://www.crystalcare.org.uk/wp-content/uploads/2014/05/pp-blank-m.jpg",
-      icon: "assets/youtubeWhite.png",
+      icon: "assets/youtube.png",
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
       featured: true,
@@ -32,7 +32,7 @@ const Testimonials = () => {
       title: "Developer",
       img:
         "https://www.crystalcare.org.uk/wp-content/uploads/2014/05/pp-blank-m.jpg",
-      icon: "assets/linkedinWhite.png",
+      icon: "assets/linkedin.png",
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
     },
@@ -44,7 +44,7 @@ const Testimonials = () => {
         {data.map((d) => (
           <div className={d.featured ? "card featured" : "card"} key={d.key}>
             <div className="top">
-              <img src="assets/right-arrowWhite.png" className="left" alt="" />
+              <img src="assets/right-arrow.png" className="left" alt="" />
               <img
                 className="user"
                 src={d.img}

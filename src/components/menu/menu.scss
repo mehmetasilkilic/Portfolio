@@ -3,7 +3,7 @@
 .menu {
   width: 300px;
   height: 100vh;
-  background-color: white;
+  background-color: crimson;
   position: fixed;
   top: 0;
   right: -300px;
@@ -31,13 +31,12 @@
       margin-bottom: 25px;
       a {
         font-size: inherit;
-        color: inherit;
+        color: white;
         text-decoration: none;
       }
 
       &:hover {
         font-weight: 500;
-        color: crimson;
       }
     }
   }
