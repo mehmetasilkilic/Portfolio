@@ -107,9 +107,6 @@ const Intro = () => {
             )}
           </AnimatePresence>
         </About>
-        <a href="#portfolio">
-          <img src="assets/downWhite.png" alt="" />
-        </a>
       </div>
     </div>
   );
