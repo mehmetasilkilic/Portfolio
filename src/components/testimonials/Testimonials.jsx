@@ -11,7 +11,7 @@ const Testimonials = () => {
         "https://www.crystalcare.org.uk/wp-content/uploads/2014/05/pp-blank-m.jpg",
       icon: "assets/twitter.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam doloresm.",
     },
     {
       id: 2,
