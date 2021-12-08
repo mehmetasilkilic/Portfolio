@@ -22,7 +22,7 @@ const Testimonials = () => {
         "https://www.crystalcare.org.uk/wp-content/uploads/2014/05/pp-blank-m.jpg",
       icon: "assets/youtube.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibuss. ",
       featured: true,
     },
     {

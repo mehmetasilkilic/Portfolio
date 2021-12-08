@@ -1,7 +1,6 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro"
 import Portfolio from "./components/portfolio/Portfolio"
-import Header from "./components/header/Header"
 /* import Testimonials from "./components/testimonials/Testimonials" */
 import "./app.scss"
 import { useState } from "react";
