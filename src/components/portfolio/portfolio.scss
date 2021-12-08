@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: white;
+  background-color: $secondaryColor;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: $secondaryColor;
       }
 
       .buttonWrapper {
@@ -82,7 +82,7 @@
           height: 50px;
           border-radius: 5px;
           border: 3px solid crimson;
-          color: white;
+          color: $secondaryColor;
           font-weight: bold;
           background-color: transparent;
           font-size: 20px;
@@ -92,7 +92,7 @@
   
           &:hover {
             cursor: pointer;
-            color: white;
+            color: $secondaryColor;
           }
             
           &::before {

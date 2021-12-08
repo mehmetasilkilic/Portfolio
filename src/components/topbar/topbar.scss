@@ -4,7 +4,7 @@
   width: 100%;
   height: 60px;
   background-color: transparent;
-  color: white;
+  color: $secondaryColor;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -38,19 +38,19 @@
   }
 
   &.active {
-    color: white;
+    color: $secondaryColor;
 
     .hamburger {
       span {
         &:first-child {
-          background-color: white;
+          background-color: $secondaryColor;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: white;
+          background-color: $secondaryColor;
           transform: rotate(-45deg);
         }
       }
