@@ -3,6 +3,7 @@ import { init } from "ityped";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import About from "../about/About";
+import Header from "../header/Header";
 
 const Intro = () => {
 
@@ -33,7 +34,7 @@ const Intro = () => {
   return (
     <div className="intro" id="intro">
       <div className="wrapper">
-        <h1>Mehmet Asil Kılıç</h1>
+        <Header />
         <h3>
           <span ref={textRef}></span>
         </h3>
@@ -44,7 +45,7 @@ const Intro = () => {
               <>
                 <motion.div
                   initial={{
-                    y: 100,
+                    y: 200,
                     opacity: 0
                   }}
                   animate={{
@@ -56,7 +57,7 @@ const Intro = () => {
                     }
                   }}
                   exit={{
-                    y: 100,
+                    y: 200,
                     opacity: 0,
                     transition: {
                       duration: 0.3,
@@ -72,7 +73,7 @@ const Intro = () => {
                 </motion.div>
                 <motion.div
                   initial={{
-                    y: -100,
+                    y: -200,
                     opacity: 0
                   }}
                   animate={{
@@ -84,7 +85,7 @@ const Intro = () => {
                     }
                   }}
                   exit={{
-                    y: -100,
+                    y: -200,
                     opacity: 0,
                     transition: {
                       duration: 0.3,

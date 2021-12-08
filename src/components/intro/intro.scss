@@ -4,6 +4,7 @@
   background-color: $mainColor;
   height: 100vh;
   display: flex;
+  justify-content: start;
 
   @include mobile{
     flex-direction: column;

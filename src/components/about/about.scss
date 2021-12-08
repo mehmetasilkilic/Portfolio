@@ -22,9 +22,10 @@
     .modalBox {
         position: relative;
         display: flex;
-        margin: auto;
-        top: 15%;
-        height: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 700px;
         width: 900px;
         overflow: hidden;
         background-color: transparent;

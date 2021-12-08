@@ -1,0 +1,88 @@
+@import "../../global.scss";
+
+
+
+.wrapperH {
+    display: flex;
+
+    .containerM {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        place-content: center;
+      
+        .itemM {
+          width: 100%;
+          overflow: visible;
+          stroke: #fff;
+          stroke-width: 1;
+          stroke-linejoin: round;
+          stroke-linecap: round;
+        }
+
+        h1 {
+            font-size: 50px;
+            position: absolute;
+            color: white;
+            letter-spacing: 2px;
+            bottom: 0;
+            left: 80%;
+        }
+      }
+      
+      .containerA {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          place-content: center;
+        
+          .itemA {
+            width: 100%;
+            overflow: visible;
+            stroke: #fff;
+            stroke-width: 1;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+          }
+
+          h1 {
+            font-size: 50px;
+            position: absolute;
+            color: white;
+            letter-spacing: 2px;
+            bottom: 0;
+            left: 70%;
+        }
+        }
+      
+        .containerK {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          place-content: center;
+        
+          .itemK {
+            width: 100%;
+            overflow: visible;
+            stroke: #fff;
+            stroke-width: 1;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+          }
+
+          h1 {
+            font-size: 50px;
+            position: absolute;
+            color: white;
+            letter-spacing: 2px;
+            bottom: 0;
+            left: 60%;
+        }
+        }
+          
+}
+    
+  
+
+  
