@@ -11,14 +11,14 @@
   transition: all 1s ease;
 
   .wrapper {
-    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     .right {
       .hamburger {
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-right: 30px;
         width: 32px;
         height: 25px;
         display: flex;

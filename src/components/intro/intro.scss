@@ -17,31 +17,22 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      padding-left: 300px;
+      margin-left: 300px;
 
       @include mobile{
-        padding-left: 0;
-        align-items: center;
+        margin-left: 0;
       }
 
-      h1 {
-        font-size: 60px;
-        color: $secondaryColor;
-        margin: 10px 0;
-
-        @include mobile{
-          font-size: 40px;
-        }
-      }
       h2 {
         font-size: 35px;
       }
       h3 {
         font-size: 30px;
-
+        
         @include mobile{
-          font-size: 20px;
+          align-self: center;
         }
+  
 
         span {
           font-size: inherit;
@@ -79,6 +70,10 @@
           cursor: pointer;
           color: $secondaryColor;
           box-shadow: inset 150px 0 0 0 crimson;
+        }
+
+        @include mobile{
+          align-self: center;
         }
       }
 

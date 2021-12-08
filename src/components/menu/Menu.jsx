@@ -10,9 +10,6 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
         <li onClick={() => setMenuOpen(false)}>
           <a href="#portfolio">Latest Works</a>
         </li>
-        {/* <li onClick={() => setMenuOpen(false)}>
-          <a href="#testimonials">Testimonials</a>
-        </li> */}
       </ul>
     </div>
   );
