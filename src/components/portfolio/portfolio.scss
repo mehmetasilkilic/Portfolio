@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .portfolio {
+  position: relative;
   background-color: $secondaryColor;
   display: flex;
   flex-direction: column;
@@ -9,8 +10,8 @@
 
   h1 {
     font-size: 50px;
-    color: $mainColor;
-    margin: 100px 0;
+    color: crimson;
+    margin: 50px 0;
 
     @include mobile{
       font-size: 20px;
@@ -114,6 +115,51 @@
             opacity: 1;
             z-index: -1;
           }
+        }
+      }
+    }
+  }
+
+  .portfolioBottom {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+    .kbWrapper {
+      background-color: crimson;
+      width: 100%;
+      height: 190px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 900px;
+        height: 380px;
+        position: absolute;
+        bottom: 20px;
+      }
+
+      button{
+        margin-top: 91px;
+        margin-left: 8px;
+        width: 315px;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        background-color: crimson;
+        box-shadow: inset 0 0 0 0 white;
+        font-size: 20px;
+        transition: ease-out 0.3s;
+        outline: none;
+        z-index: 99;
+
+        &:hover {
+          cursor: pointer;
+          color: crimson;
+          box-shadow: inset 315px 0 0 0 white;
         }
       }
     }
