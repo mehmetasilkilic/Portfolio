@@ -1,6 +1,5 @@
 @import "../../global.scss";
-
-
+@import "../../breakpoints.scss";
 
 .wrapperH {
     display: flex;
@@ -12,9 +11,14 @@
         display: flex;
         place-content: center;
 
-        @include mobile{
+        @include media('<=tablet'){
           width: 60px;
           height: 60px;
+        }
+
+        @include media('<=phone'){
+          width: 50px;
+          height: 50px;
         }
       
         .itemM {
@@ -35,9 +39,14 @@
             left: 80%;
             margin: 10px 0;
 
-            @include mobile{
+            @include media('<=tablet'){
               font-size: 40px;
               bottom: -2px;
+            }
+
+            @include media('<=phone'){
+              font-size: 35px;
+              bottom: -5px;
             }
         }
       }
@@ -48,10 +57,14 @@
           display: flex;
           place-content: center;
 
-          @include mobile{
-            margin-left: -30px;
+          @include media('<=tablet') {
             width: 60px;
             height: 60px;
+          }
+
+          @include media('<=phone'){
+            width: 50px;
+            height: 50px;
           }
         
           .itemA {
@@ -72,12 +85,17 @@
             left: 70%;
             margin: 10px 0;
 
-            @include mobile{
+            @include media('<=tablet') {
               font-size: 40px;
               bottom: -2px;
             }
+
+            @include media('<=phone'){
+              font-size: 35px;
+              bottom: -5px;
+            }
         }
-        }
+      }
       
         .containerK {
           width: 80px;
@@ -85,10 +103,14 @@
           display: flex;
           place-content: center;
 
-          @include mobile{
-            margin-left: -10px;
+          @include media('<=tablet') {
             width: 60px;
             height: 60px;
+          }
+
+          @include media('<=phone'){
+            width: 50px;
+            height: 50px;
           }
         
           .itemK {
@@ -109,12 +131,17 @@
             left: 60%;
             margin: 10px 0;
 
-            @include mobile{
+            @include media('<=tablet') {
               font-size: 40px;
               bottom: -2px;
             }
+
+            @include media('<=phone'){
+              font-size: 35px;
+              bottom: -5px;
+            }
         }
-        }
+      }
           
 }
     

@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import "../../breakpoints.scss";
 
 .testimonials {
   background-color: $secondaryColor;
@@ -7,7 +8,7 @@
   align-items: center;
   height: 100vh;
 
-  @include mobile{
+  @include media('<=tablet') {
     justify-content: space-around;
   }
 
@@ -16,7 +17,7 @@
     font-size: 50px;
     color: $mainColor;
 
-    @include mobile{
+    @include media('<=tablet') {
       font-size: 20px;
     }
   }
@@ -28,7 +29,7 @@
     align-items: center;
     justify-content: center;
 
-    @include mobile{
+    @include media('<=tablet') {
       flex-direction: column;
       height: 100%;
     }
@@ -44,7 +45,7 @@
       padding: 20px;
       transition: all 1s ease;
 
-      @include mobile{
+      @include media('<=tablet') {
         height: 180px;
         margin: 10px 0;
       }
@@ -54,7 +55,7 @@
           height: 75%;
           margin: 0 30px;
 
-          @include mobile{
+          @include media('<=tablet') {
             width: 250px;
             height: 180px;
             margin: 1px;
@@ -82,7 +83,7 @@
             object-fit: cover;
             margin: 0 30px;
 
-            @include mobile{
+            @include media('<=tablet') {
               width: 30px;
               height: 30px;
             }
@@ -96,7 +97,7 @@
         background-color: $secondaryColor;
         color: rgb(121, 115, 115);
 
-        @include mobile{
+        @include media('<=tablet') {
           font-size: 12px;
           padding: 5px;
         }
@@ -111,13 +112,14 @@
           margin-bottom: 5px;
           color: $mainColor;
 
-          @include mobile{
+          @include media('<=tablet') {
             font-size: 14px;
           }
         }
         h4{
             color: rgb(121, 115, 115);
-            @include mobile{
+            
+            @include media('<=tablet') {
               font-size: 13px;
             }
         }

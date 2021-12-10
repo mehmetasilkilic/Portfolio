@@ -1,11 +1,12 @@
 @import "../../global.scss";
+@import "../../breakpoints.scss";
 
 .intro {
   background-color: $mainColor;
   height: 100vh;
   display: flex;
 
-  @include mobile{
+  @include media('<=tablet') {
     flex-direction: column;
     align-items: center;
   }
@@ -19,7 +20,7 @@
       justify-content: center;
       margin-left: 300px;
 
-      @include mobile{
+      @include media('<=tablet') {
         margin-left: 0;
       }
 

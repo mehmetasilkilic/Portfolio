@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import "../../breakpoints.scss";
 
 .portfolio {
   position: relative;
@@ -8,16 +9,12 @@
   align-items: center;
   height: 100vh;
 
-  @include mobile{
-    height: 110vh;
-  }
-
   h1 {
     font-size: 50px;
     color: crimson;
     margin: 50px 0;
 
-    @include mobile{
+    @include media('<=tablet') {
       font-size: 30px;
       margin: 30px 0;
     }
@@ -29,19 +26,23 @@
     display: flex;
     justify-content: space-between ;
 
-    @include mobile{
+    @include media('<=tablet') {
       width: 90%;
       flex-wrap: wrap;
     }
 
     .wrapper {
       position: relative;
-      width: 45%;
+      width: 44%;
       margin: 10px;
       box-shadow: 0px 0px 15px -8px black;
       background-color: crimson;
       border-radius: 5px;
       overflow: hidden;
+
+      @include media('<=tablet') {
+        margin-bottom: 20px;
+      }
 
       &:hover .imgWrapper {
         transform: scale(1.5);
@@ -68,7 +69,12 @@
             border-radius: 5px;
             object-fit: cover;
             overflow: hidden;
-            margin: auto;      
+            margin: auto;   
+            
+            @include media('<=tablet') {
+              height: 200px;
+              width: 260px;
+            }
         }
       }
 
@@ -150,7 +156,7 @@
         position: absolute;
         bottom: 20px;
 
-        @include mobile{
+        @include media('<=tablet') {
           width:  500px;
           height: 220px;
         }
@@ -172,11 +178,12 @@
         outline: none;
         z-index: 99;
 
-        @include mobile{
+        @include media('<=tablet') {
           width: 175px;
           height: 25px;
           margin-top: 125px;
           margin-left: 6px;
+          font-size: 16px;
         }
 
         &:hover {
