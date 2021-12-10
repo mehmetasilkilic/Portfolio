@@ -21,26 +21,33 @@ const About = forwardRef((props, ref) => {
         }
     })
 
+    const modalBackdropVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 0.3
+            }
+        },
+        close: {
+            opacity: 0,
+            transition: {
+                duration: 0.3,
+                delay: 0.3
+            }
+        }
+    }
+
     if (display) {
         return ReactDom.createPortal(
             <div className={"modalWrapper"}>
                 <motion.div
-                    initial={{
-                        opacity: 0
-                    }}
-                    animate={{
-                        opacity: 1,
-                        transition: {
-                            duration: 0.3
-                        }
-                    }}
-                    exit={{
-                        opacity: 0,
-                        transition: {
-                            duration: 0.3,
-                            delay: 0.3
-                        }
-                    }}
+                    variants={modalBackdropVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
                     className={"modalBackdrop"} onClick={close} />
                 <div className={"modalBox"}>
                     {props.children}

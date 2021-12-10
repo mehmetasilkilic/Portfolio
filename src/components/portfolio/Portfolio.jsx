@@ -1,5 +1,5 @@
 import "./portfolio.scss"
-import {  useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import About from "../about/About";
 
@@ -46,6 +46,50 @@ const Portfolio = () => {
     aboutRef.current.openAbout();
   };
 
+  const leftVariants = {
+    hidden: {
+      y: 200,
+      opacity: 0
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: 0.3
+      }
+    },
+    close: {
+      y: 200,
+      opacity: 0,
+      transition: {
+        duration: 0.3,
+      }
+    }
+  }
+
+  const rightVariants = {
+    hidden: {
+      y: -200,
+      opacity: 0
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: 0.6
+      }
+    },
+    close: {
+      y: -200,
+      opacity: 0,
+      transition: {
+        duration: 0.3,
+      }
+    }
+  }
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
@@ -72,25 +116,10 @@ const Portfolio = () => {
       </div>
       <About ref={aboutRef}>
         <motion.div
-          initial={{
-            y: 200,
-            opacity: 0
-          }}
-          animate={{
-            y: 0,
-            opacity: 1,
-            transition: {
-              duration: 0.3,
-              delay: 0.3
-            }
-          }}
-          exit={{
-            y: 200,
-            opacity: 0,
-            transition: {
-              duration: 0.3,
-            }
-          }}
+          variants={leftVariants}
+          initial="hidden"
+          animate="visible"
+          exit="close"
           className="left">
           <h2>About Me</h2>
           <p>I'm a Frontend Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Portfolio section.</p>
@@ -100,25 +129,10 @@ const Portfolio = () => {
           <h4>Abou</h4>
         </motion.div>
         <motion.div
-          initial={{
-            y: -200,
-            opacity: 0
-          }}
-          animate={{
-            y: 0,
-            opacity: 1,
-            transition: {
-              duration: 0.3,
-              delay: 0.6
-            }
-          }}
-          exit={{
-            y: -200,
-            opacity: 0,
-            transition: {
-              duration: 0.3,
-            }
-          }}
+          variants={rightVariants}
+          initial="hidden"
+          animate="visible"
+          exit="close"
           className="right">
           <h2>Contact</h2>
           <form onSubmit={handleSubmit}>

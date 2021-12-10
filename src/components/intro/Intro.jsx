@@ -5,8 +5,6 @@ import Header from "../header/Header";
 
 const Intro = () => {
 
-
-
   const textRef = useRef();
 
   useEffect(() => {

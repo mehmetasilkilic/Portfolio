@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./header.scss";
 
-const M = {
+const letterVariants = {
   hidden: {
     opacity: 0,
     pathLength: 0,
@@ -14,31 +14,18 @@ const M = {
   }
 };
 
-const A = {
+const nameVariants = {
   hidden: {
-    opacity: 0,
-    pathLength: 0,
-    fill: "rgba(255, 255, 255, 0)"
+    opacity: 0
   },
   visible: {
     opacity: 1,
-    pathLength: 1,
-    fill: "rgba(255, 255, 255, 1)"
+    transition: {
+      duration: 1,
+      delay: 3.5
+    }
   }
-};
-
-const K = {
-  hidden: {
-    opacity: 0,
-    pathLength: 0,
-    fill: "rgba(255, 255, 255, 0)"
-  },
-  visible: {
-    opacity: 1,
-    pathLength: 1,
-    fill: "rgba(255, 255, 255, 1)"
-  }
-};
+}
 
 const Header = () => {
   return (
@@ -51,7 +38,7 @@ const Header = () => {
         >
           <motion.path
             d="M 0 0 L 16.016 0 L 36.523 54.492 L 56.982 0 L 72.949 0 L 72.949 71.094 L 60.645 71.094 L 60.645 47.656 L 61.865 16.309 L 40.869 71.094 L 32.031 71.094 L 11.084 16.357 L 12.305 47.656 L 12.305 71.094 L 0 71.094 L 0 0 Z"
-            variants={M}
+            variants={letterVariants}
             initial="hidden"
             animate="visible"
             transition={{
@@ -61,16 +48,9 @@ const Header = () => {
           />
         </motion.svg>
         <motion.h1
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-            transition: {
-              duration: 1,
-              delay: 3.5
-            }
-          }}
+          variants={nameVariants}
+          initial="hidden"
+          animate="visible"
         >ehmet</motion.h1>
       </motion.div>
       <motion.div
@@ -92,7 +72,7 @@ const Header = () => {
         >
           <motion.path
             d="M 51.953 71.094 L 46.143 54.541 L 18.604 54.541 L 12.842 71.094 L 0 71.094 L 26.855 0 L 37.939 0 L 64.844 71.094 L 51.953 71.094 Z M 32.373 15.088 L 22.07 44.58 L 42.676 44.58 L 32.373 15.088 Z"
-            variants={A}
+            variants={letterVariants}
             initial="hidden"
             animate="visible"
             transition={{
@@ -102,16 +82,9 @@ const Header = () => {
           />
         </motion.svg>
         <motion.h1
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-            transition: {
-              duration: 1,
-              delay: 3.5
-            }
-          }}
+          variants={nameVariants}
+          initial="hidden"
+          animate="visible"
         >sil</motion.h1>
       </motion.div>
       <motion.div
@@ -133,7 +106,7 @@ const Header = () => {
         >
           <motion.path
             d="M 41.797 71.094 L 20.41 40.381 L 12.354 48.926 L 12.354 71.094 L 0 71.094 L 0 0 L 12.354 0 L 12.354 33.35 L 19.189 24.902 L 39.99 0 L 54.932 0 L 28.516 31.494 L 56.445 71.094 L 41.797 71.094 Z"
-            variants={K}
+            variants={letterVariants}
             initial="hidden"
             animate="visible"
             transition={{
@@ -143,16 +116,9 @@ const Header = () => {
           />
         </motion.svg>
         <motion.h1
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-            transition: {
-              duration: 1,
-              delay: 3.5
-            }
-          }}
+          variants={nameVariants}
+          initial="hidden"
+          animate="visible"
         >ılıç</motion.h1>
       </motion.div>
     </div>
