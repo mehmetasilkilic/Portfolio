@@ -50,7 +50,7 @@ const Header = () => {
         x: 0,
       },
       visible: {
-        x: 120,
+        x: 115,
         transition: {
           duration: 1,
           delay: 3
@@ -76,7 +76,7 @@ const Header = () => {
         x: 0,
       },
       visible: {
-        x: 160,
+        x: 155,
         transition: {
           duration: 1,
           delay: 3

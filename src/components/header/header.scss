@@ -12,8 +12,8 @@
         place-content: center;
 
         @include media('<=phone'){
-          width: 60px;
-          height: 60px;
+          width: 55px;
+          height: 55px;
         }
       
         .itemM {
@@ -35,8 +35,8 @@
             margin: 10px 0;
 
             @include media('<=phone'){
-              font-size: 40px;
-              bottom: -2px;
+              font-size: 38px;
+              bottom: -4px;
             }
         }
       }
@@ -48,8 +48,8 @@
           place-content: center;
 
           @include media('<=phone') {
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
           }
         
           .itemA {
@@ -71,8 +71,8 @@
             margin: 10px 0;
 
             @include media('<=phone') {
-              font-size: 40px;
-              bottom: -2px;
+              font-size: 38px;
+              bottom: -4px;
             }
         }
       }
@@ -84,8 +84,8 @@
           place-content: center;
 
           @include media('<=phone') {
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
           }
         
           .itemK {
@@ -107,8 +107,8 @@
             margin: 10px 0;
 
             @include media('<=phone') {
-              font-size: 40px;
-              bottom: -2px;
+              font-size: 38px;
+              bottom: -4px;
             }
         }
       }
