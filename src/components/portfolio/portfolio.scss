@@ -154,6 +154,14 @@
       display: flex;
       justify-content: center;
 
+      @include media('<=tablet') {
+        height: 110px;
+      }
+
+      @include media('<=phone') {
+        height: 70px;
+      }
+
       img {
         width: 900px;
         height: 380px;
@@ -164,12 +172,17 @@
           width:  500px;
           height: 220px;
         }
+
+        @include media('<=phone') {
+          width:  300px;
+          height: 140px;
+        }
       }
 
       button{
         margin-top: 91px;
-        margin-left: 8px;
-        width: 315px;
+        margin-left: -60px;
+        width: 245px;
         height: 45px;
         border-radius: 5px;
         border: none;
@@ -183,11 +196,21 @@
         z-index: 99;
 
         @include media('<=tablet') {
-          width: 175px;
+          border-radius: 4px;
+          width: 136px;
           height: 25px;
-          margin-top: 125px;
-          margin-left: 6px;
+          margin-top: 45px;
+          margin-left: -34px;
           font-size: 16px;
+        }
+
+        @include media('<=phone') {
+          border-radius: 3px;
+          width: 82px;
+          height: 17px;
+          margin-top: 21px;
+          margin-left: -20px;
+          font-size: 8px;
         }
 
         &:hover {
