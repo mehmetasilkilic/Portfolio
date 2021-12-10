@@ -11,14 +11,9 @@
         display: flex;
         place-content: center;
 
-        @include media('<=tablet'){
+        @include media('<=phone'){
           width: 60px;
           height: 60px;
-        }
-
-        @include media('<=phone'){
-          width: 50px;
-          height: 50px;
         }
       
         .itemM {
@@ -39,14 +34,9 @@
             left: 80%;
             margin: 10px 0;
 
-            @include media('<=tablet'){
+            @include media('<=phone'){
               font-size: 40px;
               bottom: -2px;
-            }
-
-            @include media('<=phone'){
-              font-size: 35px;
-              bottom: -5px;
             }
         }
       }
@@ -57,14 +47,9 @@
           display: flex;
           place-content: center;
 
-          @include media('<=tablet') {
+          @include media('<=phone') {
             width: 60px;
             height: 60px;
-          }
-
-          @include media('<=phone'){
-            width: 50px;
-            height: 50px;
           }
         
           .itemA {
@@ -85,14 +70,9 @@
             left: 70%;
             margin: 10px 0;
 
-            @include media('<=tablet') {
+            @include media('<=phone') {
               font-size: 40px;
               bottom: -2px;
-            }
-
-            @include media('<=phone'){
-              font-size: 35px;
-              bottom: -5px;
             }
         }
       }
@@ -103,14 +83,9 @@
           display: flex;
           place-content: center;
 
-          @include media('<=tablet') {
+          @include media('<=phone') {
             width: 60px;
             height: 60px;
-          }
-
-          @include media('<=phone'){
-            width: 50px;
-            height: 50px;
           }
         
           .itemK {
@@ -131,14 +106,9 @@
             left: 60%;
             margin: 10px 0;
 
-            @include media('<=tablet') {
+            @include media('<=phone') {
               font-size: 40px;
               bottom: -2px;
-            }
-
-            @include media('<=phone'){
-              font-size: 35px;
-              bottom: -5px;
             }
         }
       }

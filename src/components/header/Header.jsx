@@ -1,33 +1,89 @@
 import { motion } from "framer-motion";
 import "./header.scss";
-
-const letterVariants = {
-  hidden: {
-    opacity: 0,
-    pathLength: 0,
-    fill: "rgba(255, 255, 255, 0)"
-  },
-  visible: {
-    opacity: 1,
-    pathLength: 1,
-    fill: "rgba(255, 255, 255, 1)"
-  }
-};
-
-const nameVariants = {
-  hidden: {
-    opacity: 0
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 1,
-      delay: 3.5
-    }
-  }
-}
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Header = () => {
+
+  const isPhone = useMediaQuery('(min-width: 578px)');
+
+  const letterVariants = {
+    hidden: {
+      opacity: 0,
+      pathLength: 0,
+      fill: "rgba(255, 255, 255, 0)"
+    },
+    visible: {
+      opacity: 1,
+      pathLength: 1,
+      fill: "rgba(255, 255, 255, 1)"
+    }
+  };
+
+  const nameVariants = {
+    hidden: {
+      opacity: 0
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 3.5
+      }
+    }
+  }
+
+  const contAVariants = isPhone
+    ? {
+      hidden: {
+        x: 0,
+      },
+      visible: {
+        x: 150,
+        transition: {
+          duration: 1,
+          delay: 3
+        }
+      },
+    }
+    : {
+      hidden: {
+        x: 0,
+      },
+      visible: {
+        x: 120,
+        transition: {
+          duration: 1,
+          delay: 3
+        }
+      },
+    };
+
+    const contKVariants = isPhone
+    ? {
+      hidden: {
+        x: 0,
+      },
+      visible: {
+        x: 200,
+        transition: {
+          duration: 1,
+          delay: 3
+        }
+      },
+    }
+    : {
+      hidden: {
+        x: 0,
+      },
+      visible: {
+        x: 160,
+        transition: {
+          duration: 1,
+          delay: 3
+        }
+      },
+    };
+
   return (
     <div className="wrapperH">
       <motion.div className="containerM">
@@ -54,16 +110,9 @@ const Header = () => {
         >ehmet</motion.h1>
       </motion.div>
       <motion.div
-        initial={{
-          x: 0,
-        }}
-        animate={{
-          x: 150,
-          transition: {
-            duration: 1,
-            delay: 3
-          }
-        }}
+        variants={contAVariants}
+        initial="hidden"
+        animate="visible"
         className="containerA">
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
@@ -88,16 +137,9 @@ const Header = () => {
         >sil</motion.h1>
       </motion.div>
       <motion.div
-        initial={{
-          x: 0,
-        }}
-        animate={{
-          x: 200,
-          transition: {
-            duration: 1,
-            delay: 3
-          }
-        }}
+        variants={contKVariants}
+        initial="hidden"
+        animate="visible"
         className="containerK">
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"

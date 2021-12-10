@@ -24,11 +24,12 @@
         margin-left: 0;
       }
 
-      h2 {
-        font-size: 35px;
-      }
       h3 {
         font-size: 30px; 
+
+        @include media('<=phone') {
+          font-size: 25px; 
+        }
 
         span {
           font-size: inherit;
