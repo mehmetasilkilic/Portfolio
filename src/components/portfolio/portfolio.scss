@@ -18,6 +18,10 @@
       font-size: 30px;
       margin: 30px 0;
     }
+
+    @include media('<=phone') {
+      height: auto;
+    }
   }
 
   .container {
@@ -37,7 +41,7 @@
 
     .wrapper {
       position: relative;
-      width: 43%;
+      width: 42%;
       margin: 10px;
       box-shadow: 0px 0px 15px -8px black;
       background-color: crimson;
@@ -46,6 +50,13 @@
 
       @include media('<=tablet') {
         margin-bottom: 20px;
+        width: 44%;
+      }
+
+      @include media('<=phone') {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       &:hover .imgWrapper {
@@ -54,7 +65,7 @@
       }
 
       &:hover .titleWrapper {
-        display: none;
+        color: transparent;
       }
 
       &:hover .buttonWrapper {
@@ -65,11 +76,11 @@
         display: flex;
         cursor: pointer;
         transition: 0.4s;
-        padding: 20px;
+        padding: 20px 20px 10px 20px;
 
         img {
             height: 250px;
-            width: 300px;
+            width: 320px;
             border-radius: 5px;
             object-fit: cover;
             overflow: hidden;
@@ -78,6 +89,11 @@
             @include media('<=tablet') {
               height: 200px;
               width: 260px;
+            }
+
+            @include media('<=phone') {
+              height: 200px;
+              width: 300px;
             }
         }
       }
