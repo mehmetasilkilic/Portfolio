@@ -1,4 +1,5 @@
 import "./project.scss";
+import { Link } from 'react-router-dom'
 
 const Project = () => {
     return (
@@ -8,6 +9,21 @@ const Project = () => {
                     <img src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="" />
                 </div>
                 <h1>E-commerce</h1>
+                <Link to={`/`}><p>Turn Back Home</p></Link>
+                <ul>
+                    <li>
+                        <span className="stripeLeft">CONTEXT</span>
+                        <span className="stripeRight">E-COMMERCE PROJECT</span>
+                    </li>
+                    <li>
+                        <span className="stripeLeft">SERVICES</span>
+                        <span className="stripeRight">FRONTEND DEVELOPMENT / BACKEND DEVELOPMENT</span>
+                    </li>
+                    <li>
+                        <span className="stripeLeft">PERIOD</span>
+                        <span className="stripeRight">2021</span>
+                    </li>
+                </ul>
                 <div className="descWrapper">
                     <h2>The Project</h2>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam sequi autem temporibus eius nisi qui distinctio eligendi, vitae ratione a aspernatur cumque cupiditate provident sunt est inventore ipsa, rem consectetur natus eveniet, consequatur rerum asperiores! Ipsum hic autem, ratione veniam modi praesentium sapiente quisquam deserunt impedit temporibus nostrum ipsa?</span>

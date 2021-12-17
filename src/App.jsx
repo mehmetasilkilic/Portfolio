@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="app">
       <Router>
-        <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Switch>
           <Route exact path="/">
+            <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Home />
           </Route>
           <Route path="/project">

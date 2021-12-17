@@ -3,7 +3,6 @@
 
 .project {
    
-
     .top {
         background-color: $mainColor;
 
@@ -28,6 +27,40 @@
             font-size: 60px;
             color: $secondaryColor;
         }
+
+        p {
+            position: absolute;
+            color: $secondaryColor;
+            cursor: pointer;
+            top: 3%;
+            left: 5%;
+            transform: translate(-50%,-50%);
+        }
+
+            ul {
+                position: absolute;
+                bottom: 12%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 90%;
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+                    display: flex;
+    
+                    .stripeLeft {
+                        color: crimson;
+                        font-size: 16px;
+                    }
+    
+                    .stripeRight {
+                        margin-left: 15px;
+                        color: $secondaryColor;
+                        font-size: 16px;
+                    }
+                }
+            }
 
         .descWrapper {
             display: flex;
