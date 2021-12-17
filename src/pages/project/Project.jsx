@@ -30,7 +30,7 @@ const Project = () => {
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptate maxime. Iure eum, et dicta, repudiandae molestiae facere porro ex excepturi a alias commodi perspiciatis totam cupiditate consectetur quis odio.</span>
                     </div>
                     <div className="right">
-                        <img src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="" />
+                        <img src="assets/anlys.jpg" alt="" />
                     </div>
                 </div>
                 <div className="colorPalette">

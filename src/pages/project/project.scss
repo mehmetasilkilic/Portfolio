@@ -92,7 +92,7 @@
             align-items: center;
 
             .left {
-                flex: 1;
+                flex: 2;
                 
                 h4 {
                     font-size: 24px;
@@ -105,13 +105,14 @@
             }
 
             .right {
+                display: flex;
                 flex: 1;
-                height: 400px;
-                overflow: hidden;
+                justify-content: flex-end;
 
                 img {
+                    display: block;
                     height: 400px;
-                    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+                    box-shadow: 0 0 15px rgba(0,0,0, 0.4);
                 }
             }
         }
