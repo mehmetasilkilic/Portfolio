@@ -175,12 +175,12 @@
              
               .close {
                   position: absolute;
-                  top: 70px;
-                  right: 60px;
+                  top: 75px;
+                  right: 70px;
                   border: none;
                   color: $secondaryColor;
                   background-color: transparent;
-                  font-size: 24px;
+                  font-size: 30px;
                   cursor: pointer;
 
                   @include media('<=tablet'){

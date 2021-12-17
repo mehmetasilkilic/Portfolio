@@ -2,6 +2,8 @@ import "./portfolio.scss"
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import About from "../about/About";
+import { Link } from 'react-router-dom'
+import { Close } from "@material-ui/icons";
 
 const projects = [
   {
@@ -103,7 +105,7 @@ const Portfolio = () => {
               <h3>{project.title}</h3>
             </div>
             <div className="buttonWrapper">
-              <button>Learn More</button>
+              <Link to={`/project`}><button>Learn More</button></Link>
             </div>
           </div>
         ))}
@@ -142,7 +144,7 @@ const Portfolio = () => {
             <button disabled type="submit">Send</button>
             {message && <span>Thanks, I'll reply ASAP</span>}
           </form>
-          <button className="close" onClick={() => aboutRef.current.close()}>X</button>
+          <Close className="close" onClick={() => aboutRef.current.close()} />
           <h3>Contact</h3>
         </motion.div>
       </About>

@@ -1,0 +1,169 @@
+@import "../../breakpoints.scss";
+@import "../../global.scss";
+
+.project {
+   
+
+    .top {
+        background-color: $mainColor;
+
+        .imgWrapper {
+            position: relative;
+            background-color: black;
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                opacity: 0.4;
+            }
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 60px;
+            color: $secondaryColor;
+        }
+
+        .descWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                margin-top: 50px;
+                font-size: 50px;
+                color: $secondaryColor;
+            }
+
+            span {
+                color: $secondaryColor;
+                font-size: 22px;
+                padding: 50px 500px;
+            }
+
+            .buttonWrapper {
+                margin-bottom: 50px;
+
+                button{
+                    margin: 0 30px;
+                    width: 280px;
+                    height: 45px;
+                    border-radius: 5px;
+                    border: 2px solid $secondaryColor;
+                    color: $secondaryColor;
+                    font-weight: bold;
+                    background-color: transparent;
+                    box-shadow: inset 0 0 0 0  $secondaryColor;
+                    font-size: 20px;
+                    transition: ease-out 0.3s;
+                    outline: none;
+                    z-index: 99;
+            
+                    &:hover {
+                      cursor: pointer;
+                      color: $mainColor;
+                      box-shadow: inset 315px 0 0 0 $secondaryColor;
+                    }
+                  }
+            }
+        }
+    }
+
+    .middle {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            color: $mainColor;
+            font-size: 30px;
+            margin: 30px 0;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+
+            .left {
+                flex: 1;
+                
+                h4 {
+                    font-size: 24px;
+                    margin: 30px 0;
+                }
+
+                span {
+                    font-size: 20px;
+                }
+            }
+
+            .right {
+                flex: 1;
+                height: 400px;
+                overflow: hidden;
+
+                img {
+                    height: 400px;
+                    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+                }
+            }
+        }
+
+        .colorPalette {
+            width: 100%;
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .colorDiv {
+                position: relative;
+                height: 180px;
+                width: 180px;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+                transition: 0.3s;
+
+                    &:hover span {
+                        color: crimson;
+                    }
+
+                span {
+                    position: absolute;
+                    font-size: 18px;
+                    top: 110%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+
+        h3 {
+            font-size: 30px;
+            margin: 30px 0;
+            color: $mainColor;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
