@@ -9,8 +9,8 @@ const Project = () => {
                     <img src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="" />
                 </div>
                 <h1>E-commerce</h1>
-                <Link to={`/`}><p>Turn Back Home</p></Link>
-                <ul>
+                <Link to={`/`}><p className="turnBack">Turn Back Home</p></Link>
+                <ul className="stripeWrapper">
                     <li>
                         <span className="stripeLeft">CONTEXT</span>
                         <span className="stripeRight">E-COMMERCE PROJECT</span>
