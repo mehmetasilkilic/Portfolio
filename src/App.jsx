@@ -4,6 +4,7 @@ import Menu from "./components/menu/Menu";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Project from "./pages/project/Project";
+import ScrollToTop from "./utils/scrollToTop"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -13,11 +14,13 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
+            <ScrollToTop />
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Home />
           </Route>
           <Route path="/project">
+            <ScrollToTop />
             <Project />
           </Route>
         </Switch>
