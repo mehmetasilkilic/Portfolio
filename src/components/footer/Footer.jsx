@@ -3,7 +3,7 @@ import { Person, Mail } from "@material-ui/icons";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer>
       <div className="left">
           <div className="itemContainer">
             <Person className="icon" />
@@ -14,7 +14,7 @@ const Footer = () => {
             <span>mehmetasil96@gmail.com</span>
           </div>
         </div>
-    </div>
+    </footer>
   );
 }
 
