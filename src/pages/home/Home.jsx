@@ -11,7 +11,7 @@ const Home = () => {
             transition: {
                 type: 'tween',
                 ease: "linear",
-                duration: 0.4
+                duration: 0.4,
             }
         },
         visible: {
@@ -20,7 +20,8 @@ const Home = () => {
             transition: {
                 type: 'tween',
                 ease: "linear",
-                duration: 0.4
+                duration: 0.4,
+                delay: 0.1
             }
         }
     }
