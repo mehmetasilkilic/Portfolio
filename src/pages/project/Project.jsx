@@ -5,6 +5,27 @@ import { motion } from "framer-motion";
 
 const Project = () => {
 
+    const pageTransitions = {
+        hidden: {
+            opacity: 0,
+            x: "-100vh",
+            transition: {
+                type: 'tween',
+                ease: "linear",
+                duration: 0.4
+            }
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                type: 'tween',
+                ease: "linear",
+                duration: 0.4
+            }
+        }
+    }
+
     const goBack = {
         hover: {
             scale: 1.3,
@@ -17,12 +38,17 @@ const Project = () => {
     }
 
     return (
-        <div className="project">
+        <motion.div
+            variants={pageTransitions}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className="project">
             <div className="top">
                 <div className="imgWrapper">
                     <img src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="" />
                 </div>
-                <h1>E-commerce</h1>
+                <h1 className="projectTitle">E-commerce</h1>
                 <Link to={`/`}>
                     <motion.p
                         variants={goBack}
@@ -95,7 +121,7 @@ const Project = () => {
                 </div>
             </Fade>
             <div className="next"></div>
-        </div>
+        </motion.div>
     )
 }
 

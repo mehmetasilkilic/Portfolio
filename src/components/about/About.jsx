@@ -1,7 +1,7 @@
 import "./about.scss";
 import { useState, forwardRef, useImperativeHandle } from "react";
 import ReactDom from "react-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const About = forwardRef((props, ref) => {
     const [display, setDisplay] = useState(false);
@@ -30,31 +30,21 @@ const About = forwardRef((props, ref) => {
             transition: {
                 duration: 0.3
             }
-        },
-        close: {
-            opacity: 0,
-            transition: {
-                duration: 0.3,
-                delay: 0.3
-            }
         }
     }
 
     if (display) {
         return ReactDom.createPortal(
-            <AnimatePresence>
-                <div className={"modalWrapper"}>
-                    <motion.div
-                        variants={modalBackdropVariants}
-                        initial="hidden"
-                        animate="visible"
-                        exit="close"
-                        className={"modalBackdrop"} onClick={close} />
-                    <div className={"modalBox"}>
-                        {props.children}
-                    </div>
+            <div className={"modalWrapper"}>
+                <motion.div
+                    variants={modalBackdropVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className={"modalBackdrop"} onClick={close} />
+                <div className={"modalBox"}>
+                    {props.children}
                 </div>
-            </AnimatePresence>, document.getElementById("aboutRoot"))
+            </div>, document.getElementById("aboutRoot"))
     }
     return null;
 });
