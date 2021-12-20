@@ -6,7 +6,6 @@ const Home = () => {
 
     const pageTransitions = {
         hidden: {
-            opacity: 0,
             x: "-100vw",
             transition: {
                 type: 'tween',
@@ -15,7 +14,6 @@ const Home = () => {
             }
         },
         visible: {
-            opacity: 1,
             x: 0,
             transition: {
                 type: 'tween',

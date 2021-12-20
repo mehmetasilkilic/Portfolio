@@ -29,13 +29,13 @@
             position: absolute;
             color: white;
             letter-spacing: 2px;
-            bottom: 0;
+            bottom: 5px;
             left: 80%;
             margin: 10px 0;
 
             @include media('<=phone'){
               font-size: 38px;
-              bottom: -4px;
+              bottom: -1px;
             }
         }
       }
@@ -65,13 +65,13 @@
             position: absolute;
             color: white;
             letter-spacing: 2px;
-            bottom: 0;
+            bottom: 5px;
             left: 70%;
             margin: 10px 0;
 
             @include media('<=phone') {
               font-size: 38px;
-              bottom: -4px;
+              bottom: -1px;
             }
         }
       }
@@ -101,13 +101,13 @@
             position: absolute;
             color: white;
             letter-spacing: 2px;
-            bottom: 0;
+            bottom: 5px;
             left: 60%;
             margin: 10px 0;
 
             @include media('<=phone') {
               font-size: 38px;
-              bottom: -4px;
+              bottom: -1px;
             }
         }
       }

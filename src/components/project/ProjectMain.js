@@ -4,14 +4,16 @@ const Main = () => {
     return (
         <div className="projectMain">
             <div className="top">
-                <div className="descWrapper">
+                <div className="topWrapper">
                     <h2>The Project</h2>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam sequi autem temporibus eius nisi qui distinctio eligendi, vitae ratione a aspernatur cumque cupiditate provident sunt est inventore ipsa, rem consectetur natus eveniet, consequatur rerum asperiores! Ipsum hic autem, ratione veniam modi praesentium sapiente quisquam deserunt impedit temporibus nostrum ipsa?</span>
-                    <div className="buttonWrapper">
-                        <a href="https://makecom.herokuapp.com/" rel="noreferrer noopener" target="_blank"><button>Visit Website</button></a>
-                        <a href="https://makecomadmin.herokuapp.com/" rel="noreferrer noopener" target="_blank"><button>Visit Admin Panel</button></a>
-                        <a href="https://github.com/mehmetasilkilic/ecomclient" rel="noreferrer noopener" target="_blank"><button>Visit Website's GitHub</button></a>
-                        <a href="https://github.com/mehmetasilkilic/ecomadminpanel" rel="noreferrer noopener" target="_blank"><button>Visit Admin Panel's GitHub</button></a>
+                    <div className="descWrapper">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam sequi autem temporibus eius nisi qui distinctio eligendi, vitae ratione a aspernatur cumque cupiditate provident sunt est inventore ipsa, rem consectetur natus eveniet, consequatur rerum asperiores! Ipsum hic autem, ratione veniam modi praesentium sapiente quisquam deserunt impedit temporibus nostrum ipsa?</span>
+                        <div className="buttonWrapper">
+                            <a href="https://makecom.herokuapp.com/" rel="noreferrer noopener" target="_blank"><button>Visit Website</button></a>
+                            <a href="https://makecomadmin.herokuapp.com/" rel="noreferrer noopener" target="_blank"><button>Visit Admin Panel</button></a>
+                            <a href="https://github.com/mehmetasilkilic/ecomclient" rel="noreferrer noopener" target="_blank"><button>Visit Website's GitHub</button></a>
+                            <a href="https://github.com/mehmetasilkilic/ecomadminpanel" rel="noreferrer noopener" target="_blank"><button>Visit Admin Panel's GitHub</button></a>
+                        </div>
                     </div>
                 </div>
             </div>

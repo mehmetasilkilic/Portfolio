@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
       }}
       className='header'>
       <div className='header-inner'>
-        <div className='logo'>MAK</div>
+        <Link to={`/`}><div className='logo'>MAK</div></Link>
         <nav className='nav'>
           <li>
             <a href='/design'>The Project</a>
