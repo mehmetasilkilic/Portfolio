@@ -49,11 +49,30 @@
         width: 100%;
         justify-content: flex-start;
       }
-      .row-message {
-        font-weight: 500;
-        font-size: 1.8rem;
-        line-height: 2.6rem;
-        width: 320px;
+      .stripeWrapper {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            display: flex;
+
+            .stripeLeft {
+                color: crimson;
+                margin-right: 10px;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                width: 150px;
+            }
+
+            .stripeRight {
+                color: black; 
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                width: auto;                    
+            }
+        }
       }
     }
     .scroll {
@@ -103,8 +122,7 @@
     display: block;
     top: -128px;
     position: relative;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     z-index: -100;
     @media (max-width: $layout-breakpoint-xsmall) {
       top: -56px;

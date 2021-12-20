@@ -1,71 +1,7 @@
-@import "../../sass/main.scss";
-
-.project {
+.projectMain {
    
     .top {
         background-color: $mainColor;
-        
-        .imgWrapper {
-            position: relative !important;
-            background-color: black;
-            height: 80vh;
-            overflow: hidden;
-
-            img {
-                min-width: 100%;
-                opacity: 0.4;
-                background-position: 50%;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-        }
-
-        .projectTitle {
-            position: absolute;
-            top: 11%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            font-size: 60px;
-            color: $secondaryColor;
-        }
-
-        .turnBack {
-            position: absolute;
-            color: $secondaryColor;
-            cursor: pointer;
-            top: 1%;
-            left: 3%;
-            
-        }
-
-            .stripeWrapper {
-                position: absolute;
-                width: 80%;
-                margin-left: 10%;
-                top: 25%;
-                display: flex;
-                justify-content: space-between;
-
-                @include media('<=tablet') {
-                    width: 90%;
-                    margin-left: 5%;
-                    font-size: 12px;
-                }
-
-                li {
-                    display: flex;
-                    justify-content: space-between;
-    
-                    .stripeLeft {
-                        color: crimson;
-                        margin-right: 10px;
-                    }
-    
-                    .stripeRight {
-                        color: $secondaryColor;                     
-                    }
-                }
-            }
 
         .descWrapper {
             width: 90%;
