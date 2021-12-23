@@ -16,7 +16,7 @@ $move-final: calc(-50%);
     animation-play-state: paused;
     @media (min-width: $layout-breakpoint-large) {
       transform: translate3d(calc(-25% + 10vw), 0, 0);
-      animation: marquee-lg 5s linear infinite;
+      animation: marquee-lg 8s linear infinite;
       animation-play-state: paused;
     }
   }

@@ -1,4 +1,5 @@
 .projectMain {
+    margin-top: -80px;
    
     .top {
         background-color: $background;
@@ -19,11 +20,21 @@
                 width: 60%;
                 margin: 50px auto 0 auto;
 
+                @include media('<=tablet') {
+                    margin-top: 20px;
+                    width:80%;
+                    flex-direction: column;
+                }
+
                 span {
                     flex: 2;
                     color: $mainColor;
                     font-size: 22px;
                     margin-top: 70px;
+
+                    @include media('<=tablet') {
+                        margin-top: 20px;
+                    }
                 }
     
                 .buttonWrapper {
@@ -34,6 +45,11 @@
                     margin: 0 auto;
                     flex-direction: column;
                     align-items: flex-end;
+
+                    @include media('<=tablet') {
+                        margin-top: 20px;
+                        align-items: center;
+                    }
     
                     button{
                         padding: 0 30px;
@@ -146,8 +162,8 @@
                 }
 
                 @include media('<=phone') {
-                    height: 70px;
-                    width: 70px;
+                    height: 50px;
+                    width: 50px;
                 }
                     &:hover span {
                         color: crimson;
@@ -162,6 +178,7 @@
                     transition: 0.3s;
 
                     @include media('<=phone') {
+                        font-size: 14px;
                         top: 130%;
                     }
                 }
