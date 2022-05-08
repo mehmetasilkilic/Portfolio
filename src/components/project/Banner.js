@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const projectId = urlParams.get('id')
+
+
 const banner = {
   animate: {
     transition: {
@@ -31,9 +36,9 @@ const Banner = () => {
   }, []);
   return (
     <motion.div className='banner' variants={banner}>
-      <BannerRowTop title={"brand"} />
-      <BannerRowCenter title={"e-commerce"} playMarquee={playMarquee} />
-      <BannerRowBottom title={"site"} />
+      <BannerRowTop title={projectId == 0 ? "AuWallet" : projectId == 1 ? "TimeEX" : projectId == 2 ? "TimeEX" : projectId == 3 ? "App" : ""} />
+      <BannerRowCenter title={projectId == 0 ? "Crypto-Wallet" : projectId == 1 ? "Exchange-App" : projectId == 2 ? "Admin-Panel" : projectId == 3 ? "E-commerce" : ""} playMarquee={playMarquee} />
+      <BannerRowBottom title={projectId == 0 ? "Mobile-App" : projectId == 1 ? "Mobile-App" : projectId == 2 ? "Web-App" : projectId == 3 ? "Mobile-App" : ""} />
     </motion.div>
   );
 };
@@ -69,20 +74,68 @@ const BannerRowTop = ({ title }) => {
           delay: 0.4,
         }}
         className='row-col'>
-        <ul className="stripeWrapper">
-          <li>
-            <span className="stripeLeft">CONTEXT</span>
-            <span className="stripeRight">E-COMMERCE PROJECT</span>
-          </li>
-          <li>
-            <span className="stripeLeft">SERVICES</span>
-            <span className="stripeRight">FRONTEND DEVELOPMENT / BACKEND DEVELOPMENT</span>
-          </li>
-          <li>
-            <span className="stripeLeft">PERIOD</span>
-            <span className="stripeRight">2021</span>
-          </li>
-        </ul>
+        {
+          projectId === 0 ?
+            <ul className="stripeWrapper">
+              <li>
+                <span className="stripeLeft">CONTEXT</span>
+                <span className="stripeRight">AU WALLET</span>
+              </li>
+              <li>
+                <span className="stripeLeft">SERVICES</span>
+                <span className="stripeRight">FRONTEND DEVELOPMENT</span>
+              </li>
+              <li>
+                <span className="stripeLeft">PERIOD</span>
+                <span className="stripeRight">2022</span>
+              </li>
+            </ul> :
+            projectId === 1 ?
+              <ul className="stripeWrapper">
+                <li>
+                  <span className="stripeLeft">CONTEXT</span>
+                  <span className="stripeRight">TIMEEX</span>
+                </li>
+                <li>
+                  <span className="stripeLeft">SERVICES</span>
+                  <span className="stripeRight">FRONTEND DEVELOPMENT</span>
+                </li>
+                <li>
+                  <span className="stripeLeft">PERIOD</span>
+                  <span className="stripeRight">2021</span>
+                </li>
+              </ul> :
+              projectId === 2 ?
+                <ul className="stripeWrapper">
+                  <li>
+                    <span className="stripeLeft">CONTEXT</span>
+                    <span className="stripeRight">TIMEEX ADMIN PANEL</span>
+                  </li>
+                  <li>
+                    <span className="stripeLeft">SERVICES</span>
+                    <span className="stripeRight">FRONTEND DEVELOPMENT</span>
+                  </li>
+                  <li>
+                    <span className="stripeLeft">PERIOD</span>
+                    <span className="stripeRight">2022</span>
+                  </li>
+                </ul> :
+                projectId === 3 ?
+                  <ul className="stripeWrapper">
+                    <li>
+                      <span className="stripeLeft">CONTEXT</span>
+                      <span className="stripeRight">E-COMMERCE PROJECT</span>
+                    </li>
+                    <li>
+                      <span className="stripeLeft">SERVICES</span>
+                      <span className="stripeRight">FRONTEND DEVELOPMENT / BACKEND DEVELOPMENT</span>
+                    </li>
+                    <li>
+                      <span className="stripeLeft">PERIOD</span>
+                      <span className="stripeRight">2021</span>
+                    </li>
+                  </ul> : ""
+        }
       </motion.div>
     </div>
   );

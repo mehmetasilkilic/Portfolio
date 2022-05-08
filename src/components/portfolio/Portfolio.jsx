@@ -8,28 +8,34 @@ import { Close } from "@material-ui/icons";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce",
-    img: "assets/ecom.jpg",
+    title: "AuWallet",
+    img: "images/AuWallet-1.jpg",
   },
   {
     id: 2,
-    title: "JDM Blog",
-    img: "assets/jdmblog.jpg",
+    title: "TimeEX",
+    img: "images/TimeEX-1.jpg",
   },
   {
     id: 3,
-    title: "Portfolio",
-    img: "assets/portfolio.jpg",
+    title: "TimeEX-Admin-Panel",
+    img: "images/Admin-Panel-1.jpg",
   },
   {
     id: 4,
-    title: "Fobbo",
-    img: "assets/fobbo.jpg",
+    title: "E-commerce",
+    img: "assets/ecom.jpg",
   },
 ];
 
 
 const Portfolio = () => {
+
+  const refreshPage = () => {
+    setTimeout(()=>{
+        window.location.reload(false);
+    }, 500);
+}
 
   const [message, setMessage] = useState(false);
 
@@ -87,7 +93,7 @@ const Portfolio = () => {
               <h3>{project.title}</h3>
             </div>
             <div className="buttonWrapper">
-              <Link to={`/project`}><button>Learn More</button></Link>
+              <Link to={`/project?id=${id}`}><button onClick={refreshPage}>Learn More</button></Link>
             </div>
           </div>
         ))}
@@ -108,7 +114,7 @@ const Portfolio = () => {
           <p>I'm a Frontend Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Portfolio section.</p>
           <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
           <h3>Competencies</h3>
-          <p>HTML5, CSS3/SASS, JavaScript, ReactJS, Redux, NextJS, NodeJS, Photoshop</p>
+          <p>HTML5, CSS3/SASS, JavaScript, ReactJS, Redux, NextJS, Vue, Photoshop</p>
           <h4>Abou</h4>
         </motion.div>
         <motion.div

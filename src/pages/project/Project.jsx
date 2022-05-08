@@ -10,6 +10,9 @@ import ProjectMain from "../../components/project/ProjectMain";
 
 function App() {
     const [loading, setLoading] = useState(true);
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const projectId = urlParams.get('id')
 
     useEffect(() => {
         loading
@@ -32,7 +35,7 @@ function App() {
                             <div className='transition-image final'>
                                 <motion.img
                                     transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
-                                    src={process.env.PUBLIC_URL + `/images/image-2.jpg`}
+                                    src={process.env.PUBLIC_URL + projectId == 0 ? `/images/AuWallet-1.jpg` : projectId == 1 ? `/images/TimeEX-1.jpg` : projectId == 2 ? `/images/Admin-Panel-1.jpg` : projectId == 3 ? `/images/image-2.jpg` : ""}
                                     layoutId='main-image-1'
                                 />
                             </div>

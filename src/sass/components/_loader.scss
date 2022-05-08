@@ -11,7 +11,10 @@ body.loading {
       display: flex;
       align-items: center;
       justify-content: center;
-      &.image-1 {
+      &.image-1,
+      &.AuWallet-2,
+      &.TimeEX-2,
+      &.Admin-Panel-2 {
         width: 400px;
         left: 16%;
         bottom: 14%;
@@ -20,7 +23,10 @@ body.loading {
           bottom: 28%;
         }
       }
-      &.image-3 {
+      &.image-3,
+      &.AuWallet-3,
+      &.TimeEX-3,
+      &.Admin-Panel-3 {
         width: 300px;
         right: 12%;
         top: 8%;
@@ -29,7 +35,10 @@ body.loading {
           right: 4%;
         }
       }
-      &.image-4 {
+      &.image-4,
+      &.AuWallet-4,
+      &.TimeEX-4,
+      &.Admin-Panel-4 {
         max-width: 400px;
         width: 40%;
         right: 20%;
@@ -39,7 +48,10 @@ body.loading {
           bottom: 32%;
         }
       }
-      &.image-5 {
+      &.image-5,
+      &.AuWallet-5,
+      &.TimeEX-5,
+      &.Admin-Panel-5 {
         width: 280px;
         left: 14%;
         top: 12%;

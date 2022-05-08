@@ -5,6 +5,10 @@ import Image from "./Image";
 
 // Import images
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const projectId = urlParams.get('id')
+
 const container = {
   show: {
     transition: {
@@ -56,16 +60,16 @@ const Loader = ({ setLoading }) => {
         exit="exit"
         className="loader-inner"
       >
-        <ImageBlock variants={item} id="image-1" />
+        <ImageBlock variants={item} id={projectId == 0 ? "AuWallet-2" : projectId == 1 ? "TimeEX-2" : projectId == 2 ? "Admin-Panel-2" : projectId == 3 ? "image-1" : ""}/>
         <motion.div variants={itemMain} className="transition-image">
           <motion.img
             layoutId="main-image-1"
-            src={process.env.PUBLIC_URL + `/images/image-2.jpg`}
+            src={process.env.PUBLIC_URL + projectId == 0 ? `/images/AuWallet-1.jpg` : projectId == 1 ? `/images/TimeEX-1.jpg` : projectId == 2 ? `/images/Admin-Panel-1.jpg` : projectId == 3 ? `/images/image-2.jpg` : ""}
           />
         </motion.div>
-        <ImageBlock variants={item} id="image-3" />
-        <ImageBlock variants={item} id="image-4" />
-        <ImageBlock variants={item} id="image-5" />
+        <ImageBlock variants={item} id={projectId == 0 ? "AuWallet-3" : projectId == 1 ? "TimeEX-3" : projectId == 2 ? "Admin-Panel-3" : projectId == 3 ? "image-3" : ""} />
+        <ImageBlock variants={item} id={projectId == 0 ? "AuWallet-4" : projectId == 1 ? "TimeEX-4" : projectId == 2 ? "Admin-Panel-4" : projectId == 3 ? "image-4" : ""} />
+        <ImageBlock variants={item} id={projectId == 0 ? "AuWallet-5" : projectId == 1 ? "TimeEX-5" : projectId == 2 ? "Admin-Panel-5" : projectId == 3 ? "image-5" : ""} />
       </motion.div>
     </motion.div>
   );
