@@ -2,6 +2,9 @@ import Intro from "../../components/intro/Intro"
 import Portfolio from "../../components/portfolio/Portfolio"
 import { motion } from "framer-motion";
 
+
+// a
+
 const Home = () => {
 
     const pageTransitions = {
